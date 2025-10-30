@@ -1,0 +1,21 @@
+// atm_withdrawal.c
+#include <stdio.h>
+
+int main(void) {
+    double balance;
+    printf("Enter initial account balance (KSh): ");
+    if (scanf("%lf", &balance) != 1) return 1;
+
+    while (balance > 0) {
+        double withdraw;
+        printf("Enter amount to withdraw: ");
+        if (scanf("%lf", &withdraw) != 1) break;
+        balance -= withdraw;
+        printf("Balance after withdrawal: KSh %.2f\n", balance);
+        if (balance <= 0) {
+            printf("Account balance is zero or negative. No further withdrawals allowed.\n");
+            break;
+        }
+    }
+    return 0;
+}
