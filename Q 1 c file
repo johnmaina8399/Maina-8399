@@ -1,0 +1,9 @@
+#include <stdio.h>
+
+int main() {
+    FILE *file;
+
+    // TODO: open file, take input, write to file
+
+    return 0;
+}
