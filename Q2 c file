@@ -1,0 +1,17 @@
+
+#include <stdio.h>
+
+struct Student {
+    char name[50];
+    int regNo;
+    float totalMarks;
+};
+
+int main() {
+    FILE *file;
+    struct Student s;
+
+    
+
+    return 0;
+}
